@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/vasyl1312/mern_fullstack_website_vladilen#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "config": "^3.3.7",
     "express": "^4.17.2",
     "mongoose": "^6.2.0"
