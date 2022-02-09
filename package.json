@@ -1,0 +1,33 @@
+{
+  "name": "mern_fullstack_website_vladilen",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasyl1312/mern_fullstack_website_vladilen.git"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Vasyl Hryts <vasylhryts@knu.ua>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasyl1312/mern_fullstack_website_vladilen/issues"
+  },
+  "homepage": "https://github.com/vasyl1312/mern_fullstack_website_vladilen#readme",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
