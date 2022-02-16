@@ -1,5 +1,5 @@
 {
     "port": 5000,
     "jwtSecret": "vasyl mern",
-    "mongoUri": "mongodb+srv://vasyl:1q2w3e4r@cluster0.9cidc.mongodb.net/app?retryWrites=true&w=majority"
+    "mongoUri": "mongodb+srv://vasyl:1q2w3e4r@cluster0.hey3n.mongodb.net/myFirstDatabase"
 }
