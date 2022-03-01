@@ -41,15 +41,15 @@ export const AuthPage = () => {
   return (
     <div className="row">
       <div className="col s6 offset-s3">
-        <h1>Скороти Посилання</h1>
+        <h1>Сократи Ссылку</h1>
         <div className="card blue darken-1">
           <div className="card-content white-text">
-            <span className="card-title">Авторизація</span>
+            <span className="card-title">Авторизация</span>
             <div>
 
               <div className="input-field">
                 <input
-                  placeholder="Введіть email"
+                  placeholder="Введите email"
                   id="email"
                   type="text"
                   name="email"
@@ -62,7 +62,7 @@ export const AuthPage = () => {
 
               <div className="input-field">
                 <input
-                  placeholder="Введіть пароль"
+                  placeholder="Введите пароль"
                   id="password"
                   type="password"
                   name="password"
@@ -82,14 +82,14 @@ export const AuthPage = () => {
               disabled={loading}
               onClick={loginHandler}
             >
-              Увійти
+              Войти
             </button>
             <button
               className="btn grey lighten-1 black-text"
               onClick={registerHandler}
               disabled={loading}
             >
-              Реєстрація
+              Регистрация
             </button>
           </div>
         </div>

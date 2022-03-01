@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "jwtSecret": "vasyl mern",
+    "mongoUri": "mongodb+srv://vasyl:1q2w3e4r@cluster0.hey3n.mongodb.net/myFirstDatabase",
+    "baseUrl": "http://localhost:5000"
+}
