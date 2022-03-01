@@ -31,7 +31,7 @@ router.post(
     const candidate = await User.findOne({ email })
 
     if (candidate) {
-      return res.status(400).json({ message: 'Такий користувач вже створений' })
+      return res.status(400).json({ message: 'Такий користувач уже існує' })
     }
 
     const hashedPassword = await bcrypt.hash(password, 12)
@@ -42,7 +42,7 @@ router.post(
     res.status(201).json({ message: 'Користувача створено' })
 
   } catch (e) {
-    res.status(500).json({ message: 'Щось пішло не так, попробуйте знову' })
+    res.status(500).json({ message: 'Щось пішло не так, cпробуйте знову' })
   }
 })
 
@@ -75,7 +75,7 @@ router.post(
     const isMatch = await bcrypt.compare(password, user.password)
 
     if (!isMatch) {
-      return res.status(400).json({ message: 'Неправильний пароль, спробуйте знову' })
+      return res.status(400).json({ message: 'Щось пішло не так, cпробуйте знову' })
     }
 
     const token = jwt.sign(
@@ -87,7 +87,7 @@ router.post(
     res.json({ token, userId: user.id })
 
   } catch (e) {
-    res.status(500).json({ message: 'Щось пішло не так, попробуйте знову' })
+    res.status(500).json({ message: 'Щось пішло не так, cпробуйте знову' })
   }
 })
 
