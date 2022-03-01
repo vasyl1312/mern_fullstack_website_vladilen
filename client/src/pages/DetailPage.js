@@ -33,4 +33,4 @@ export const DetailPage = () => {
       { !loading && link && <LinkCard link={link} /> }
     </>
   )
-}
+}//2-42

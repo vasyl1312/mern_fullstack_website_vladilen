@@ -14,10 +14,10 @@ router.get('/:code', async (req, res) => {
       return res.redirect(link.from)
     }
 
-    res.status(404).json('Ссылка не найдена')
+    res.status(404).json('посилання не знайдено')
 
   } catch (e) {
-    res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
+    res.status(500).json({ message: 'Щось пішло не так, спробуйте знову' })
   }
 })
 
